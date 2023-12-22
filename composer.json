@@ -1,0 +1,31 @@
+{
+  "name": "Edguy/AdminPanel",
+  "description": "Admin panel",
+  "minimum-stability": "stable",
+  "license": "MIT",
+  "authors": [
+    {
+      "name": "Yurii",
+      "email": "y.litvin@ukr.net"
+    }
+  ],
+  "require": {
+    "php": "^8.1",
+    "intervention/image": "^2.7",
+    "rap2hpoutre/laravel-log-viewer": "^2.3"
+  },
+
+  "autoload": {
+    "psr-4": {
+      "Edguy\\AdminPanel\\": "src"
+    }
+  },
+
+  "extra": {
+    "laravel": {
+      "providers": [
+        "Edguy\\AdminPanel\\Providers\\AdminPanelServiceProvider"
+      ]
+    }
+  }
+}
