@@ -19,7 +19,7 @@ class AdminPanelServiceProvider extends ServiceProvider
         $this->loadRoutesFrom(__DIR__.'/../routes/admin.php');
 
         $this->publishes([
-            __DIR__.'/public' => public_path('adminAssets'),
+            __DIR__.'/../public' => app()->path('public'),
             __DIR__.'/../resources/views' => resource_path('views/admin'),
             __DIR__.'/../Traits' => app()->path('Traits'),
             __DIR__.'/../Http/Requests' => app()->path('Http/Requests'),
