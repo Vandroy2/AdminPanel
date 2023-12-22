@@ -25,7 +25,7 @@ class AdminPanelServiceProvider extends ServiceProvider
             __DIR__.'/../Http/Requests' => app()->path('Http/Requests'),
             __DIR__.'/../Services' => app()->path('Services'),
             __DIR__.'/../Helpers' => app()->path('Helpers'),
-        ]);
+        ], 'adminPanel');
 
         $this->app['router']->aliasMiddleware('admin.login', LoginMiddleware::class);
 
